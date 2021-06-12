@@ -64,4 +64,4 @@ let IsChecked = true,
     isClose = false;
 
 // логический оператор отрицания знак !
-console.log(IsChecked && !isClose);
+// console.log(IsChecked && !isClose);
