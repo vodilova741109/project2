@@ -149,3 +149,89 @@
 // john.__proto__ = soldier;
 // console.log(john);
 // console.log(john.armor);
+
+// задача 2.20
+// if (1 && 0) { // вычисляется как true && false
+//     alert( "не сработает, так как результат ложный" );
+//   }
+
+// alert( "1"[0] );
+
+// alert( +"Infinity" );
+
+// 2.22
+
+let box = document.getElementById('box'),
+    btn = document.getElementsByTagName('button'),
+    circle = document.getElementsByClassName('circle'),
+    heart = document.querySelectorAll('.wrapper .heart'),
+    oneHeart = document.querySelector('.heart'),
+    wrapper = document.querySelector('.wrapper');
+
+// console.log(box);   
+// console.log(btn);   
+// console.log(btn[0]);   
+// console.log(circle[2]);   
+// console.log(heart[1]);   
+// console.log(oneHeart);    
+
+box.style.backgroundColor = 'blue';
+btn[1].style.borderRadius = '100%';
+
+circle[0].style.backgroundColor = 'red';
+circle[1].style.backgroundColor = 'yellow';
+circle[2].style.backgroundColor = 'green';
+
+// цикл
+
+// for (let i =0; i <h1 heart.length; i++){
+//     heart[i].style.backgroundColor = 'blue';
+// }
+
+// аналогичный цикл, но удобнее
+
+// heart.forEach(function(item, i, hearts){
+//     item.style.backgroundColor = 'blue';
+
+// });
+
+// создание нового элемента
+
+let div = document.createElement('div'),
+    text = document.createTextNode('Тут был я');
+
+// добавляем класс
+div.classList.add('black'); 
+
+
+console.log(div);
+
+// добавляем текст или текст в теге
+
+// div.innerHTML = '<h1>Hello World</h1>';
+
+div.textContent = 'Hello World';
+
+// добавляем div  в Html
+// document.body.appendChild(div);
+
+// добавляем div в какой-то блок - wrapper
+// wrapper.appendChild(div);
+
+// добавляем div перед чем-то - перед  circle[0]
+document.body.insertBefore(div, circle[0]);
+
+// удаляем элемент со страницы - кружочек
+
+document.body.removeChild(circle[1]);
+wrapper.removeChild(heart[1]);
+
+// заменяем что-то (1 аргумент) на другое (2 аргумент)
+
+document.body.replaceChild(btn[1], circle[1] );
+
+
+
+
+
+ 
