@@ -182,6 +182,8 @@ circle[0].style.backgroundColor = 'red';
 circle[1].style.backgroundColor = 'yellow';
 circle[2].style.backgroundColor = 'green';
 
+
+
 // цикл
 
 // for (let i =0; i <h1 heart.length; i++){
@@ -197,6 +199,7 @@ circle[2].style.backgroundColor = 'green';
 
 // создание нового элемента
 
+
 let div = document.createElement('div'),
     text = document.createTextNode('Тут был я');
 
@@ -210,7 +213,7 @@ console.log(div);
 
 // div.innerHTML = '<h1>Hello World</h1>';
 
-div.textContent = 'Hello World';
+div.textContent = 'Hello World!';
 
 // добавляем div  в Html
 // document.body.appendChild(div);
