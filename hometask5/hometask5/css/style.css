@@ -24,6 +24,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
+    background-color: rgba(0,0,0, .5);
 }
 .menu-item {
     color: #fff;
