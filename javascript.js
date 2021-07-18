@@ -227,7 +227,7 @@ document.body.insertBefore(div, circle[0]);
 // удаляем элемент со страницы - кружочек
 
 document.body.removeChild(circle[1]);
-wrapper.removeChild(heart[1]);
+wrapper.removeChild(heart[0]);
 
 // заменяем что-то (1 аргумент) на другое (2 аргумент)
 
