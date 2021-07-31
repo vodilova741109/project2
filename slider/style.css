@@ -1,0 +1,40 @@
+.wrapper{
+  width: 600px;
+  margin: 0 auto;
+}
+.slider-container{
+  overflow: hidden;
+  background-color: pink;
+}
+.slider-track{
+  display: flex;
+  background-color: yellow;
+  transition: .2s ;
+}
+.slider-item{
+    height: 100px;
+    min-width: 200px;
+}
+.slider-item:nth-child(3n+1){
+  height: 100px;
+  background-color: red;
+}
+.slider-item:nth-child(3n+2){
+  height: 100px;
+  background-color: blue;
+}
+
+.slider-item:nth-child(3n+3){
+  height: 100px;
+  background-color: green;
+}
+
+.slider-buttons{
+  text-align: center;
+}
+.btn-prev{
+    
+}
+.btn-next{
+    
+}
